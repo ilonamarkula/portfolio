@@ -9,7 +9,7 @@ body {
 
 .me {
   height: 80vmin;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
 }
@@ -29,9 +29,34 @@ body {
   font-size: 1.5rem;
   color: rgba(225, 229, 232, 0.511);
   margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .menu-buttons {
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
 }
+
+.nav-button {
+  text-decoration: none;
+  color: rgb(228, 228, 249);
+  background-color: rgb(119, 144, 202);
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 1.5px;
+}
+
+.nav-button:hover {
+  background-color: rgba(50, 63, 98, 0.67);
+}
+
+.linkedin-button {
+  display: inline-block;
+  color: rgba(225, 229, 232, 0.511);
+  margin-top: 17px;
+  margin-left: -2px;
+}
+
+/* rgb(119, 144, 202);*/
+
+/*rgba(120, 149, 229, 0.67);*/
