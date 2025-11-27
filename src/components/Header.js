@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import App from "../App";
 import { FaLinkedin } from "react-icons/fa";
 import ilona2 from "../ilona2.png";
 import { SlSocialLinkedin } from "react-icons/sl";
 
-function Header({ isHome }) {
+function Header() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
   return (
     <header className={`Header ${isHome ? "home-layout" : "default-layout"}`}>
       <h1 className="name">ILONA MARKULA</h1>
