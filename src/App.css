@@ -1,12 +1,9 @@
 .home {
-}
-
-.home-layout {
   margin-left: 200px;
   margin-top: 200px;
 }
 
-.default-layout {
+.header-layout {
   display: flex;
   top: 0;
   background-color: rgba(0, 0, 0, 0.281);
@@ -37,7 +34,7 @@ body {
   margin-bottom: 0;
 }
 
-.default-layout .name {
+.header-layout .name {
   font-size: 1.5rem;
   margin-top: 5px;
   margin-left: 50px;
@@ -57,7 +54,7 @@ body {
   gap: 0.5rem;
 }
 
-.default-layout .menu-buttons {
+.header-layout .menu-buttons {
   margin-right: 30px;
 }
 
