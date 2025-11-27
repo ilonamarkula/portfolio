@@ -1,29 +1,39 @@
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Header() {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-  if (isHome) {
-    return null;
-  }
+  const [hidden, setHidden] = useState(true);
+
+  useEffect(() => {
+    const home = document.getElementById("home");
+    const homeHeight = home?.offsetHeight || 0;
+
+    const onScroll = () => {
+      setHidden(window.scrollY < homeHeight);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
-    <header className="header-layout">
+    <header className={`header-layout ${hidden ? "hidden" : "visible"}`}>
       <h1 className="name">ILONA MARKULA</h1>
 
       <nav className="menu-buttons">
-        <Link className="nav-button" to="/">
+        <a className="nav-button" href="#home">
           Home
-        </Link>
-        <Link className="nav-button" to="/about">
+        </a>
+
+        <a className="nav-button" href="#about">
           About
-        </Link>
-        <Link className="nav-button" to="/resume">
+        </a>
+        <a className="nav-button" href="#resume">
           Resume
-        </Link>
-        <Link className="nav-button" to="/contact">
+        </a>
+        <a className="nav-button" href="#contact">
           Contact
-        </Link>
+        </a>
       </nav>
     </header>
   );

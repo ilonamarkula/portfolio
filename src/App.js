@@ -7,15 +7,22 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <Router>
+    <>
+      {" "}
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-    </Router>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="resume">
+        <Resume />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+    </>
   );
 }
 

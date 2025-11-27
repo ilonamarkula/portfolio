@@ -10,18 +10,19 @@ function Home() {
       <p className="title">Future Cyber Specialist</p>
 
       <nav className="menu-buttons">
-        <Link className="nav-button" to="/">
+        <a className="nav-button" href="#home">
           Home
-        </Link>
-        <Link className="nav-button" to="/about">
+        </a>
+
+        <a className="nav-button" href="#about">
           About
-        </Link>
-        <Link className="nav-button" to="/resume">
+        </a>
+        <a className="nav-button" href="#resume">
           Resume
-        </Link>
-        <Link className="nav-button" to="/contact">
+        </a>
+        <a className="nav-button" href="#contact">
           Contact
-        </Link>
+        </a>
       </nav>
 
       <a
