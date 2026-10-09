@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 function Header() {
   const [hidden, setHidden] = useState(true);
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     const home = document.getElementById("home");
@@ -18,23 +21,29 @@ function Header() {
   }, []);
   return (
     <header className={`header-layout ${hidden ? "hidden" : "visible"}`}>
-      <h1 className="name">ILONA MARKULA</h1>
+      <a className="name" href="#home">
+        ILONA MARKULA
+      </a>
 
       <nav className="menu-buttons">
         <a className="nav-button" href="#home">
-          Home
+          Koti
         </a>
-
         <a className="nav-button" href="#about">
-          About
+          Tietoa
         </a>
         <a className="nav-button" href="#resume">
-          Resume
+          Museo
         </a>
         <a className="nav-button" href="#contact">
-          Contact
+          Ota yhteyttä
         </a>
       </nav>
+      {width < 667 && (
+        <a href="#home">
+          <FaArrowUp size={30} className="arrow" />
+        </a>
+      )}
     </header>
   );
 }
