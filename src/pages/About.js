@@ -21,47 +21,24 @@ function About() {
           </p>
 
           <p>
-            {" "}
-            Tykkään aivoistani. Palaset loksahtavat niissä nopeasti kohdilleen
-            ja siksi oonkin nopea oppimaan.{" "}
+            Mua kiinnostaa useat eri asiat ja voisin nähdä itseni monenlaisessa
+            työssä. Kyberturvallisuus on kuitenkin noussut ykköseksi.
             <span className="dark-word">
-              Osaan yhdistellä sieltä täältä oppimiani asioita yhdeksi
-              kokonaisuudeksi
-            </span>
-            . Nautin ongelmanratkaisusta, liittyi se mihin tahansa. Tunnen
-            itseni hyvin, tiedän tavat, joilla opin parhaiten ja osaan hyödyntää
-            niitä. Jos en osaa jotain, kysyn apua enkä jää pulaan.
+              Tietoturvan parissa työskenteleminen tuntuisi yhteiskunnallisesti
+              merkittävältä ja pääsisin hyödyntämään useita vahvuuksiani.
+            </span>{" "}
+            Uskon, että mun ongelmanratkaisukyvystä, matemaattisesta
+            ajattelusta, kirjoitustaidosta, luovuudesta ja
+            tunneälystä/ihmisosaamisesta olisi kaikista hyötyä. Olisi unelma
+            päästä käyttämään juuri niitä osana omaa työtäni.
           </p>
-        </div>
-      </div>
 
-      <div className="about-row">
-        <div className="about-text">
           <p>
-            {" "}
-            Ajattelin aiemmin, että mun kirous työelämässä tulee olemaan se,
-            miten mua kiinnostaa niin moni eri asia, enkä malttaisi valita vain
-            yhtä. Nyt oon kuitenkin tajunnut, että kiinnostus ja uteliaisuus
-            monia asioita kohtaan sekä monipuolinen osaaminen on mun vahvuus.{" "}
-            <span className="dark-word">
-              Ehkä mun ei tarvitsekaan löytää vain yhtä asiaa, jossa olisin
-              erityisen hyvä, vaan tehtävä, jossa mun erilaisista vahvuuksista
-              on hyötyä
-            </span>
-            . Unelmatyössäni pääsisin käyttämään mun ongelmanratkaisukykyä,
-            matemaattista ajattelua, kirjoitustaitoa, luovuutta ja
-            tunneälyä/ihmisosaamista .{" "}
-          </p>
-        </div>
-      </div>
-      <div className="about-row">
-        <div className="about-text">
-          <p>
-            {" "}
             Tää tulee olemaan mun ensimmäinen it-alan työpaikka. Mua täytyy siis
-            opettaa. Multa kuitenkin löytyy valmiudet ja halu oppia, sosiaaliset
-            taidot on kunnossa ja tiimityöskentely tapahtuu hyvässä hengessä. En
-            ole ehtinyt tottua mihinkään tiettyyn tapaan tehdä asioita ja jo
+            opettaa. Multa kuitenkin löytyy valmiudet ja{" "}
+            <span className="dark-word">halu oppia</span>, sosiaaliset taidot on
+            kunnossa ja tiimityöskentely tapahtuu hyvässä hengessä. En ole
+            ehtinyt tottua mihinkään tiettyyn tapaan tehdä asioita ja jo
             opitusta on tunnetusti vaikeampi oppia pois.{" "}
             <span className="dark-word">
               Saatte opettaa mulle just teidän tavat ja tyylit tehdä asiat
@@ -75,9 +52,9 @@ function About() {
           <p>
             {" "}
             Lisäksi haluan loppuun flexata, etten tän tekstin kirjoittamiseen
-            käyttänyt tekoälyä, kun se tuntuu nykyään olevan valitettavan
-            harvinaista. Rakastan kirjoittamista ja lukemista, ja kirjoitustaito
-            taitaa olla tälläkin alalla plussaa. :){" "}
+            käyttänyt tekoälyä, kun kirjoitustaito ja luovuus tuntuu nykyään
+            olevan valitettavan harvinaista. En kuitenkaan välttele tekoälyä,
+            vaan hyödynnän sitä sopivissa paikoissa esim. oppimisen tukena. :){" "}
           </p>
         </div>
       </div>
